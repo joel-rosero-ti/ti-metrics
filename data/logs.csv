@@ -1,0 +1,6 @@
+id,ip,status_code,endpoint
+1,8.8.8.8,200,/login
+2,1.1.1.1,500,/api/data
+3,8.8.8.8,200,/login
+4,192.168.1.10,500,/dashboard
+5,9.9.9.9,404,/admin

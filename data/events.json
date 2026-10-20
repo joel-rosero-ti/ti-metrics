@@ -1,0 +1,4 @@
+[
+    {"id": "ev-01", "server": "srv-web-01", "cpu_usage": 85, "memory_usage": 70},
+    {"id": "ev-02", "server": "srv-db-01", "cpu_usage": 45, "memory_usage": 90}
+]
