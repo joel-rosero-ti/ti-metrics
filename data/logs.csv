@@ -1,6 +1,6 @@
-id,ip,status_code,endpoint
-1,8.8.8.8,200,/login
-2,1.1.1.1,500,/api/data
-3,8.8.8.8,200,/login
-4,192.168.1.10,500,/dashboard
-5,9.9.9.9,404,/admin
+timestamp,ip,method,path,status,cpu_percent,memory_percent
+2026-10-20T14:30:00Z,8.8.8.8,GET,/login,200,15.5,40.2
+2026-10-20T14:32:15Z,1.1.1.1,POST,/checkout,500,88.0,95.4
+2026-10-20T14:35:00Z,192.168.1.25,GET,/dashboard,200,12.0,35.0
+2026-10-20T14:40:22Z,9.9.9.9,PUT,/update-profile,400,60.5,75.2
+2026-10-20T14:45:10Z,45.33.32.156,GET,/admin,500,92.1,88.9
