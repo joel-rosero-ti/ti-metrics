@@ -2,15 +2,27 @@
     "metricas": {
         "total_logs": 5,
         "total_eventos_unicos": 0,
-        "porcentaje_errores_500": "40.00%",
-        "ips_criticas": {
-            "1.1.1.1": 1,
-            "192.168.1.10": 1,
-            "9.9.9.9": 1
-        },
+        "porcentaje_errores_500": "0.00%",
+        "ips_criticas": {},
         "promedio_memoria": "0.00%"
     },
     "geolocalizacion_ips": {
+        "1.1.1.1": {
+            "status": "success",
+            "country": "Australia",
+            "countryCode": "AU",
+            "region": "QLD",
+            "regionName": "Queensland",
+            "city": "South Brisbane",
+            "zip": "4101",
+            "lat": -27.4766,
+            "lon": 153.0166,
+            "timezone": "Australia/Brisbane",
+            "isp": "Cloudflare, Inc",
+            "org": "APNIC and Cloudflare DNS Resolver project",
+            "as": "AS13335 Cloudflare, Inc.",
+            "query": "1.1.1.1"
+        },
         "192.168.1.10": {
             "status": "fail",
             "message": "private range",
@@ -31,22 +43,6 @@
             "org": "Quad9",
             "as": "AS19281 Quad9",
             "query": "9.9.9.9"
-        },
-        "1.1.1.1": {
-            "status": "success",
-            "country": "Australia",
-            "countryCode": "AU",
-            "region": "QLD",
-            "regionName": "Queensland",
-            "city": "South Brisbane",
-            "zip": "4101",
-            "lat": -27.4766,
-            "lon": 153.0166,
-            "timezone": "Australia/Brisbane",
-            "isp": "Cloudflare, Inc",
-            "org": "APNIC and Cloudflare DNS Resolver project",
-            "as": "AS13335 Cloudflare, Inc.",
-            "query": "1.1.1.1"
         },
         "8.8.8.8": {
             "status": "success",

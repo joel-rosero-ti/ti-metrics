@@ -5,7 +5,7 @@ from services.api_client import ApiClient
 from services.metrics import MetricsCalculator
 
 def generar_reporte():
-    print("--- INICIANDO MOTOR TI-METRICS ---")
+    print("--- INICIANDO TI-METRICS ---")
 
     parser_csv = CsvParser("data/logs.csv")
     registros, ips_unicas = parser_csv.leer_y_deduplicar()
