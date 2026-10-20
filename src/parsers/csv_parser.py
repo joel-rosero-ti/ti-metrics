@@ -13,6 +13,7 @@ class CsvParser:
                 lector = csv.DictReader(archivo)
                 for fila in lector:
                     ip = fila.get("ip")
+                    # Leemos "status" de tu nueva tabla
                     status = int(fila.get("status", 0))
                     
                     if ip:
@@ -20,8 +21,8 @@ class CsvParser:
 
                     registros.append({
                         "ip": ip,
-                        "status_code": status, 
-                        "endpoint": fila.get("path"), 
+                        "status_code": status, # Internamente lo llamamos status_code para no dañar metrics.py
+                        "endpoint": fila.get("path"),
                         "memoria": fila.get("memory_percent") 
                     })
             return registros, ips_unicas
@@ -29,6 +30,5 @@ class CsvParser:
         except FileNotFoundError:
             print(f"Error: No se encontró el archivo en {self.ruta_archivo}")
             return [], set()
-               
 
 
