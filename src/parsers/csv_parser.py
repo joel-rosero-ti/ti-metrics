@@ -13,7 +13,7 @@ class CsvParser:
                 lector = csv.DictReader(archivo)
                 for fila in lector:
                     ip = fila.get("ip")
-                    status = int(fila.get("status_code",0))
+                    status = int(fila.get("status_code", 0))
                     
                     if ip:
                         ips_unicas.add(ip)
@@ -21,8 +21,9 @@ class CsvParser:
                     registros.append({
                         "ip": ip,
                         "status_code": status,
-                        "endpoint": fila.get("endpoint")
-                        })
+                        "endpoint": fila.get("endpoint"),
+                        "memoria": fila.get("memoria") 
+                    })
             return registros, ips_unicas
 
         except FileNotFoundError:

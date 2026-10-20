@@ -25,6 +25,21 @@ class MetricsCalculator:
 
         return ips_criticas
 
+    def calcular_promedio_memoria(self):
+        if not self.registros:
+            return 0.0
+        
+        memorias = []
+        for r in self.registros:
+            mem = r.get("memoria")
+            if mem and str(mem).isdigit():
+                memorias.append(int(mem))
+                
+        if not memorias:
+            return 0.0
+            
+        return sum(memorias) / len(memorias)
+
 
         
 

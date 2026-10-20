@@ -2,7 +2,7 @@ import json
 from parsers.csv_parser import CsvParser
 from parsers.json_parser import JsonParser
 from services.api_client import ApiClient
-from services.metrics import MetricsCalculator # <-- Importamos tu clase
+from services.metrics import MetricsCalculator
 
 def generar_reporte():
     print("--- INICIANDO MOTOR TI-METRICS ---")
@@ -20,6 +20,8 @@ def generar_reporte():
     metricas = MetricsCalculator(registros)
     porcentaje_errores = metricas.calcular_porcentaje_500()
     ips_criticas = metricas.identificar_ips_criticas()
+    promedio_memoria = metricas.calcular_promedio_memoria() 
+
     api = ApiClient()
     ubicaciones = {}
     print(f"Consultando {len(ips_unicas)} IPs a la API...")
@@ -31,7 +33,8 @@ def generar_reporte():
             "total_logs": len(registros),
             "total_eventos_unicos": len(eventos_unicos),
             "porcentaje_errores_500": f"{porcentaje_errores:.2f}%",
-            "ips_criticas": ips_criticas # <-- Agregamos tu nueva métrica
+            "ips_criticas": ips_criticas,
+            "promedio_memoria": f"{promedio_memoria:.2f}%" 
         },
         "geolocalizacion_ips": ubicaciones
     }
