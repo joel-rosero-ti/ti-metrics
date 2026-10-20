@@ -13,16 +13,16 @@ class CsvParser:
                 lector = csv.DictReader(archivo)
                 for fila in lector:
                     ip = fila.get("ip")
-                    status = int(fila.get("status_code", 0))
+                    status = int(fila.get("status", 0))
                     
                     if ip:
                         ips_unicas.add(ip)
 
                     registros.append({
                         "ip": ip,
-                        "status_code": status,
-                        "endpoint": fila.get("endpoint"),
-                        "memoria": fila.get("memoria") 
+                        "status_code": status, 
+                        "endpoint": fila.get("path"), 
+                        "memoria": fila.get("memory_percent") 
                     })
             return registros, ips_unicas
 
