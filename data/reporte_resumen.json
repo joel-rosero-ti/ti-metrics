@@ -7,27 +7,6 @@
         "promedio_memoria": "0.00%"
     },
     "geolocalizacion_ips": {
-        "1.1.1.1": {
-            "status": "success",
-            "country": "Australia",
-            "countryCode": "AU",
-            "region": "QLD",
-            "regionName": "Queensland",
-            "city": "South Brisbane",
-            "zip": "4101",
-            "lat": -27.4766,
-            "lon": 153.0166,
-            "timezone": "Australia/Brisbane",
-            "isp": "Cloudflare, Inc",
-            "org": "APNIC and Cloudflare DNS Resolver project",
-            "as": "AS13335 Cloudflare, Inc.",
-            "query": "1.1.1.1"
-        },
-        "192.168.1.10": {
-            "status": "fail",
-            "message": "private range",
-            "query": "192.168.1.10"
-        },
         "9.9.9.9": {
             "status": "success",
             "country": "United States",
@@ -44,6 +23,11 @@
             "as": "AS19281 Quad9",
             "query": "9.9.9.9"
         },
+        "192.168.1.10": {
+            "status": "fail",
+            "message": "private range",
+            "query": "192.168.1.10"
+        },
         "8.8.8.8": {
             "status": "success",
             "country": "United States",
@@ -59,6 +43,22 @@
             "org": "Google Public DNS",
             "as": "AS15169 Google LLC",
             "query": "8.8.8.8"
+        },
+        "1.1.1.1": {
+            "status": "success",
+            "country": "Australia",
+            "countryCode": "AU",
+            "region": "QLD",
+            "regionName": "Queensland",
+            "city": "South Brisbane",
+            "zip": "4101",
+            "lat": -27.4766,
+            "lon": 153.0166,
+            "timezone": "Australia/Brisbane",
+            "isp": "Cloudflare, Inc",
+            "org": "APNIC and Cloudflare DNS Resolver project",
+            "as": "AS13335 Cloudflare, Inc.",
+            "query": "1.1.1.1"
         }
     }
 }
