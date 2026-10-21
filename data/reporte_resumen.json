@@ -11,21 +11,21 @@
         "promedio_memoria": "0.00%"
     },
     "geolocalizacion_ips": {
-        "1.1.1.1": {
+        "8.8.8.8": {
             "status": "success",
-            "country": "Australia",
-            "countryCode": "AU",
-            "region": "QLD",
-            "regionName": "Queensland",
-            "city": "South Brisbane",
-            "zip": "4101",
-            "lat": -27.4766,
-            "lon": 153.0166,
-            "timezone": "Australia/Brisbane",
-            "isp": "Cloudflare, Inc",
-            "org": "APNIC and Cloudflare DNS Resolver project",
-            "as": "AS13335 Cloudflare, Inc.",
-            "query": "1.1.1.1"
+            "country": "United States",
+            "countryCode": "US",
+            "region": "VA",
+            "regionName": "Virginia",
+            "city": "Ashburn",
+            "zip": "20149",
+            "lat": 39.03,
+            "lon": -77.5,
+            "timezone": "America/New_York",
+            "isp": "Google LLC",
+            "org": "Google Public DNS",
+            "as": "AS15169 Google LLC",
+            "query": "8.8.8.8"
         },
         "45.33.32.156": {
             "status": "success",
@@ -43,27 +43,6 @@
             "as": "AS63949 Akamai Connected Cloud",
             "query": "45.33.32.156"
         },
-        "192.168.1.25": {
-            "status": "fail",
-            "message": "private range",
-            "query": "192.168.1.25"
-        },
-        "8.8.8.8": {
-            "status": "success",
-            "country": "United States",
-            "countryCode": "US",
-            "region": "VA",
-            "regionName": "Virginia",
-            "city": "Ashburn",
-            "zip": "20149",
-            "lat": 39.03,
-            "lon": -77.5,
-            "timezone": "America/New_York",
-            "isp": "Google LLC",
-            "org": "Google Public DNS",
-            "as": "AS15169 Google LLC",
-            "query": "8.8.8.8"
-        },
         "9.9.9.9": {
             "status": "success",
             "country": "United States",
@@ -79,6 +58,27 @@
             "org": "Quad9",
             "as": "AS19281 Quad9",
             "query": "9.9.9.9"
+        },
+        "192.168.1.25": {
+            "status": "fail",
+            "message": "private range",
+            "query": "192.168.1.25"
+        },
+        "1.1.1.1": {
+            "status": "success",
+            "country": "Australia",
+            "countryCode": "AU",
+            "region": "QLD",
+            "regionName": "Queensland",
+            "city": "South Brisbane",
+            "zip": "4101",
+            "lat": -27.4766,
+            "lon": 153.0166,
+            "timezone": "Australia/Brisbane",
+            "isp": "Cloudflare, Inc",
+            "org": "APNIC and Cloudflare DNS Resolver project",
+            "as": "AS13335 Cloudflare, Inc.",
+            "query": "1.1.1.1"
         }
     }
 }
