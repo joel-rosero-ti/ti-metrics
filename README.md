@@ -16,13 +16,13 @@
 
 ---
 
-## 📌 1. Descripción del Proyecto
+##  1. Descripción del Proyecto
 
 **TI-Metrics** es un proyecto desarrollado en Python para analizar registros de eventos de infraestructura tecnológica. Permite leer archivos CSV y JSON, validar registros, identificar duplicados y calcular métricas relacionadas con errores HTTP 500.
 
 También consulta información geográfica aproximada de direcciones IP mediante una API y genera un reporte con los resultados.
 
-## 🎯 2. Objetivos
+##  2. Objetivos
 
 * Leer archivos CSV y JSON.
 * Validar registros e identificar datos inválidos.
@@ -33,7 +33,7 @@ También consulta información geográfica aproximada de direcciones IP mediante
 * Consultar información geográfica aproximada mediante una API.
 * Generar reportes en formato JSON.
 
-## 🛠️ 3. Tecnologías utilizadas
+##  3. Tecnologías utilizadas
 
 * **Python 3**
 * **Archivos CSV y JSON**
@@ -43,7 +43,7 @@ También consulta información geográfica aproximada de direcciones IP mediante
 * **VS Code** (entorno de desarrollo)
 * **Pytest** (para las pruebas automatizadas en los próximos hitos)
 
-## 📂 4. Estructura del Proyecto
+##  4. Estructura del Proyecto
 
 ```text
 ti-metrics/
@@ -66,3 +66,66 @@ ti-metrics/
 ├── README.md                  # Documentación
 ├── requirements.txt           # Dependencias
 └── .gitignore
+
+##  5. Instalación y ejecución
+
+Para instalar las dependencias, ejecutar desde la carpeta principal del proyecto:
+bash
+
+python -m pip install -r requirements.txt
+
+Para ejecutar el programa:
+bash
+
+python src/main.py
+
+##  6. Resultados de ejecución
+
+En una ejecución de prueba con nuestros archivos actuales se obtuvieron los siguientes resultados:
+Indicador	Resultado
+Registros leídos del CSV	4 (se descartó 1 duplicado)
+Registros leídos del JSON	2 (únicos)
+Registros inválidos	0
+Errores HTTP 500	2
+Porcentaje de errores HTTP 500	50.00 %
+Promedio de uso de memoria	66.34 %
+
+Estos resultados corresponden a los archivos procesados durante esa ejecución. Los valores pueden cambiar si se modifican los datos de entrada.
+
+El reporte se guarda en data/reporte_resumen.json.
+
+##  7. API utilizada
+
+El proyecto utiliza IP-API para consultar información geográfica aproximada de las direcciones IP.
+
+Página del servicio: http://ip-api.com/
+
+La disponibilidad de las consultas depende del servicio externo. La ubicación obtenida es aproximada.
+
+##  8. Bitácora de inteligencia artificial
+
+El archivo PROMPTS.md documenta el uso de herramientas de inteligencia artificial durante el desarrollo. La bitácora refleja las consultas realizadas, las sugerencias recibidas y las comprobaciones efectuadas sobre el código.
+
+##  9. Control de versiones
+
+El proyecto utiliza Git para registrar los cambios y GitHub para mantener el repositorio remoto.
+
+Los commits siguen los prefijos semánticos establecidos en la guía de Programación II:
+
+    feat: agregar funcionalidades.
+
+    fix: corregir errores.
+
+    refactor: reorganizar el código sin cambiar su comportamiento.
+
+    docs: actualizar documentación.
+
+    test: agregar o modificar pruebas.
+
+Repositorio del proyecto: joel-rosero-ti/ti-metrics
+
+##  10. Estado del proyecto
+
+El primer avance contempla la lectura de archivos CSV y JSON, la validación de datos, la identificación de duplicados, el cálculo de métricas, la consulta de la API y la generación del reporte JSON.
+
+Los siguientes hitos incorporarán las mejoras de arquitectura, las pruebas automatizadas y los demás requisitos establecidos por la asignatura.
