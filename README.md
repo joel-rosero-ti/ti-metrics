@@ -66,33 +66,38 @@ ti-metrics/
 ├── README.md                  # Documentación
 ├── requirements.txt           # Dependencias
 └── .gitignore
+```
 
-##  5. Instalación y ejecución
+### 5. Instalación y ejecución
 
 Para instalar las dependencias, ejecutar desde la carpeta principal del proyecto:
-bash
 
+```bash
 python -m pip install -r requirements.txt
 
 Para ejecutar el programa:
 bash
 
 python src/main.py
+```
 
-##  6. Resultados de ejecución
+### 6. Resultados de ejecución
 
 En una ejecución de prueba con nuestros archivos actuales se obtuvieron los siguientes resultados:
-Indicador	Resultado
-Registros leídos del CSV	4 (se descartó 1 duplicado)
-Registros leídos del JSON	2 (únicos)
-Registros inválidos	0
-Errores HTTP 500	2
-Porcentaje de errores HTTP 500	50.00 %
-Promedio de uso de memoria	66.34 %
+
+| Indicador | Resultado |
+| :--- | :--- |
+| Registros leídos del CSV | 4 (se descartó 1 duplicado) |
+| Registros leídos del JSON | 2 (únicos) |
+| Registros inválidos | 0 |
+| Errores HTTP 500 | 2 |
+| Porcentaje de errores HTTP 500 | 50.00 % |
+| Promedio de uso de memoria | 66.34 % |
 
 Estos resultados corresponden a los archivos procesados durante esa ejecución. Los valores pueden cambiar si se modifican los datos de entrada.
 
-El reporte se guarda en data/reporte_resumen.json.
+El reporte se guarda en `data/reporte_resumen.json`.
+
 
 ##  7. API utilizada
 
