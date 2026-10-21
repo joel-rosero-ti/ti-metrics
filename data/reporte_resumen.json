@@ -11,38 +11,6 @@
         "promedio_memoria": "0.00%"
     },
     "geolocalizacion_ips": {
-        "8.8.8.8": {
-            "status": "success",
-            "country": "United States",
-            "countryCode": "US",
-            "region": "VA",
-            "regionName": "Virginia",
-            "city": "Ashburn",
-            "zip": "20149",
-            "lat": 39.03,
-            "lon": -77.5,
-            "timezone": "America/New_York",
-            "isp": "Google LLC",
-            "org": "Google Public DNS",
-            "as": "AS15169 Google LLC",
-            "query": "8.8.8.8"
-        },
-        "45.33.32.156": {
-            "status": "success",
-            "country": "United States",
-            "countryCode": "US",
-            "region": "CA",
-            "regionName": "California",
-            "city": "Fremont",
-            "zip": "94536",
-            "lat": 37.5483,
-            "lon": -121.9886,
-            "timezone": "America/Los_Angeles",
-            "isp": "Akamai Technologies, Inc.",
-            "org": "Linode",
-            "as": "AS63949 Akamai Connected Cloud",
-            "query": "45.33.32.156"
-        },
         "9.9.9.9": {
             "status": "success",
             "country": "United States",
@@ -64,6 +32,22 @@
             "message": "private range",
             "query": "192.168.1.25"
         },
+        "45.33.32.156": {
+            "status": "success",
+            "country": "United States",
+            "countryCode": "US",
+            "region": "CA",
+            "regionName": "California",
+            "city": "Fremont",
+            "zip": "94536",
+            "lat": 37.5483,
+            "lon": -121.9886,
+            "timezone": "America/Los_Angeles",
+            "isp": "Akamai Technologies, Inc.",
+            "org": "Linode",
+            "as": "AS63949 Akamai Connected Cloud",
+            "query": "45.33.32.156"
+        },
         "1.1.1.1": {
             "status": "success",
             "country": "Australia",
@@ -79,6 +63,22 @@
             "org": "APNIC and Cloudflare DNS Resolver project",
             "as": "AS13335 Cloudflare, Inc.",
             "query": "1.1.1.1"
+        },
+        "8.8.8.8": {
+            "status": "success",
+            "country": "United States",
+            "countryCode": "US",
+            "region": "VA",
+            "regionName": "Virginia",
+            "city": "Ashburn",
+            "zip": "20149",
+            "lat": 39.03,
+            "lon": -77.5,
+            "timezone": "America/New_York",
+            "isp": "Google LLC",
+            "org": "Google Public DNS",
+            "as": "AS15169 Google LLC",
+            "query": "8.8.8.8"
         }
     }
 }
